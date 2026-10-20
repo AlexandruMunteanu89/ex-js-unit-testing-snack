@@ -1,6 +1,7 @@
 const { 
     getInitials, 
-    createSlug, 
+    createSlug,
+    average, 
 } = require("./snacks.js");
 
 
@@ -15,4 +16,11 @@ test('La funzione getInitials restituisce le iniziali di un nome completo.', () 
 //  Snack 2
 test('La funzione createSlug restituisce una stringa in lowercase.', () => {
     expect(createSlug("Voglio Che Mi Restituisce Tutto In Maiuscolo")).toBe("voglio che mi restituisce tutto in maiuscolo");
+})
+
+
+
+//  Snack 3
+test('La funzione average calcola la media aritmetica di un array di numeri.', () => {
+    expect(average([4, 8, 12])).toBe(8);
 })
