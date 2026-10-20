@@ -16,4 +16,10 @@ function average(num){
     return somma / num.length;
 }
 
-module.exports = { getInitials, createSlug, average }
+
+function isPalindrome(parola){
+    const parolaInv = parola.split('').reverse().join('');
+    return parola === parolaInv;
+}
+
+module.exports = { getInitials, createSlug, average, isPalindrome }
